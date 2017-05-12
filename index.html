@@ -242,6 +242,10 @@
 }
 
 $(document).ready(function(){
+    var deviceWidth = $(window).width();
+    if (deviceWidth <= 450) {
+        location.href = "./mobile/index.html"
+    }
     $("#button_yongyi").hover(function(){
         $("#button_yongyi").removeClass("animated fadeIn").addClass("animated pulse");
         },function(){
